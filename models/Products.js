@@ -53,9 +53,11 @@ module.exports.getProduct = function(callback){
             } 
         }
         console.log("returning value now");
+        console.log(i);
         return callback(null, {
             results:results,
-            cstock:cstock
+            cstock:cstock,
+            crc:i
         })
     });
     

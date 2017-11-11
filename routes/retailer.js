@@ -15,7 +15,8 @@ router.get('/', checkAuthenticated,function(req, res, next) {
 		console.log("rendering page now")
 		res.render('retailer',{
 			products: data.results,
-			cstock: data.cstock
+			cstock: data.cstock,
+			crc:data.crc
 		})
 	})
 });
