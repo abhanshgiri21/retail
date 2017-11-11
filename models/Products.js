@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var bcrypt = require('bcrypt');
 
-mongoose.connect('mongodb://localhost/retail');
+mongoose.connect('mongodb://abhansh:abhansh123@ds259255.mlab.com:59255/webappretail');
 var db = mongoose.connection;
 
 var ProductSchema = mongoose.Schema({

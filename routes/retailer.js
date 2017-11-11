@@ -84,7 +84,7 @@ router.get('/logout', checkAuthenticated,function(req, res, next){
 	res.redirect('/');
 })
 
-router.post('/signup', checkAuthenticated,function(req, res, next){
+router.post('/signup',function(req, res, next){
 	var username = req.body.username;
 	var password = req.body.password;
 	var password2 = req.body.password2;
